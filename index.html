@@ -1,0 +1,195 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="Keywords" content="営業支援,人材派遣,個人事業主,技術者,SE,PG,システムエンジニア,プログラマー,アウトソーシング,WEB制作,表参道,青山,そりっどしーど,ソリッド・シード,Solid Seed" />
+        <meta name="description" content="システム開発、Web制作、スマートフォンアプリ開発（iOS/Android）のソリッドシード" />
+        <title>ソリッドシード株式会社</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <style type="text/css">
+        html{
+            margin: 0px;
+            padding: 0px;
+            font-size: 62.5%;
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+            font-size: 1.4rem;
+            font-family: "MS P ゴシック", Arial, "ヒラギノ明朝 Pro W3", "Hiragino Kaku Gothic Pro", ヒラギノ明朝, Meiryo, sans-serif;
+        }
+        p{
+            margin: 8px 0px;
+            padding: 0px;
+        }
+        a{
+            text-decoration: none;
+        }
+        #app{
+            margin: 0px;
+            padding: 0px;
+            display: grid;
+            flex-direction: row;
+            justify-content: center;
+            /*grid-template-columns: auto-fit auto-fit;*/
+            /*grid-template-rows: auto-fit auto-fit auto-fit auto-fit;*/
+            grid-template-areas:
+                "main_header"
+                "global_nav"
+                "main_contents"
+                "main_footer";
+        }
+        #main_header{
+            margin: 0px;
+            padding: 0px;
+            grid-area: main_header;
+            justify-self: center;
+            align-self: center;
+            width: 100%;
+            text-align: center;
+            /*border-bottom: 5px solid #533e17;
+            box-shadow: 0 1px 8px #533e17;*/
+        }
+        #main_header h1{
+            margin: 20px 0px 0px 0px;
+            padding: 0px;
+            text-align: center;
+            font-size: 3.0rem;
+            color: #543e17;
+        }
+        /*#main_header a{
+            margin: 0px;
+            padding: 0px;
+        }*/
+        #main_header #catch_copy{
+            margin: 20px 0px 20px 0px;
+            padding: 20px;
+            font-size: 1.8rem;
+            text-align: center;
+            display: inline-block;
+            position: relative;
+        }
+        #main_header #catch_copy:before,
+        #main_header #catch_copy:after{
+            content: "";
+            width: 20px;
+            height: 30px;
+            display: inline-block;
+            position: absolute;
+        }
+        #main_header #catch_copy:before{
+            border-left: solid 3px #7bbc3a;
+            border-top: solid 3px #7bbc3a;
+            top: 0;
+            left: 0;
+        }
+        #main_header #catch_copy:after{
+            border-right: solid 3px #7bbc3a;
+            border-bottom: solid 3px #7bbc3a;
+            bottom: 0;
+            right: 0;
+        }
+        
+        #global_nav{
+            margin: 0px;
+            padding: 0px;
+            grid-area: global_nav;
+            border-bottom: 5px solid #533e17;
+            box-shadow: 0 1px 8px #533e17;
+        }
+        #global_nav ul{
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+        }
+        #global_nav li{
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+        #global_nav li a{
+            margin: 0px;
+            padding: 10px;
+            display: block;
+            /*border: solid 1px #736957;*/
+        }
+        
+        #main_content{
+            margin: 0px;
+            padding: 0px;
+            grid-area: main_contents;
+        }
+        #main_footer{
+            margin: 0px;
+            padding: 0px;
+            grid-area: main_footer;
+        }
+        #main_footer small{
+            margin: 0;
+            padding: 8px 0px;
+            width: 100%;
+            display: block;
+            color: #fff;
+            text-align: center;
+            background-color: #533e17;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="app">
+            <header id="main_header">
+                <h1>SOLID SEED</h1>
+                <div id="catch_copy">
+                    <div>スピードをもった堅実（SOLID）な経営を行い</div>
+                    <div>しっかりと種（SEED）を撒くこと</div>
+                </div>
+            </header>
+            <nav id="global_nav">
+                <ul>
+                    <li><a href="">ニュース</a></li>
+                    <li><a href="">会社概要</a></li>
+                    <li><a href="">沿革</a></li>
+                    <li><a href="">ビジョン</a></li>
+                    <li><a href="">アクセス</a></li>
+                </ul>
+            </nav>
+            <main id="main_content">
+                <article id="news">
+                    <h2>ニュース</h2>
+                    <dl>
+                        <dt>2019/12/1 年末年始休業日のお知らせ</dt>
+                        <dd>
+                            <p>弊社の年末年始の休業日につきましては下記の通りとさせて頂きますので、ご承知おき下さいますようお願い申し上げます。</p>
+                            <p>【営業終了日程】2019年12月27日</p>
+                            <p>【年末年始休業日】2019年12月28日～2020年1月3日</p>
+                            <p>【営業開始日程】2020年1月4日</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>2019/7/25 夏季休業日のお知らせ</dt>
+                        <dd>
+                            <p>弊社の夏季休業日につきましては下記の通りとさせて頂きますので、ご承知おき下さいますようお願い申し上げます。</p>
+                            <p>【夏季休業日】2019年8月14日～2019年8月16日</p>
+                        </dd>
+                    </dl>
+                </article>
+                <article id="profile">
+                    <h2>会社概要</h2>
+                </article>
+                <article id="history">
+                    <h2>沿革</h2>
+                </article>
+                <article id="vision">
+                    <h2>ビジョン</h2>
+                </article>
+                <article id="access">
+                    <h2>アクセス</h2>
+                </article>
+            </main>
+            <footer id="main_footer">
+                <small>Copyright © 2007 SolidSeed Co.,Ltd. All Rights Reserved.</small>
+            </footer>
+        </div>
+    </body>
+</html>
