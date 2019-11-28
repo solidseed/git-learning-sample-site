@@ -21,13 +21,18 @@
                 </div>
             </header>
             <nav id="global_nav">
-                <ul>
-                    <li><a href="#news">ニュース</a></li>
-                    <li><a href="#profile">会社概要</a></li>
-                    <li><a href="#history">沿革</a></li>
-                    <li><a href="#vision">ビジョン</a></li>
-                    <li><a href="#access">アクセス</a></li>
-                </ul>
+                <input id="nav_input" class="nav_input nav_unshown" type="checkbox">
+                <label class="nav_open" for="nav_input"><span></span></label>
+                <label class="nav_close nav_unshown" for="nav_input"></label>
+                <div class="nav_content">
+                    <ul>
+                        <li><label class="global_nav_btn" data-id="news" for="nav_input">ニュース</label></li>
+                        <li><label class="global_nav_btn" data-id="profile" for="nav_input">会社概要</label></li>
+                        <li><label class="global_nav_btn" data-id="history" for="nav_input">沿革</label></li>
+                        <li><label class="global_nav_btn" data-id="vision" for="nav_input">ビジョン</label></li>
+                        <li><label class="global_nav_btn" data-id="access" for="nav_input">アクセス</label></li>
+                    </ul>
+                </div>
             </nav>
             <main id="main_content">
                 <article id="news">
@@ -278,5 +283,12 @@
                 <small>Copyright © 2007 SolidSeed Co.,Ltd. All Rights Reserved.</small>
             </footer>
         </div>
+        
+        <script type="text/javascript">
+        $('.global_nav_btn').click(function(){
+            let id = $(this).attr('data-id');
+            $('html,body').animate({scrollTop:$('#'+id).offset().top});
+        });
+        </script>
     </body>
 </html>
