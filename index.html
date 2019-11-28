@@ -289,6 +289,17 @@
             let id = $(this).attr('data-id');
             $('html,body').animate({scrollTop:$('#'+id).offset().top});
         });
+        
+        $(window).on('scroll', function (){
+            let main_elem = $('#main_content article');
+            main_elem.each(function(){
+                let offset_top = $(this).offset().top;
+                let scroll_top = $(window).scrollTop();
+                if(scroll_top > offset_top - 1000){
+                    $(this).css('opacity', '1');
+                }
+            });
+        });
         </script>
     </body>
 </html>

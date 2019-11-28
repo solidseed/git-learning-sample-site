@@ -79,6 +79,17 @@ a{
     text-align: center;
     display: inline-block;
     position: relative;
+    animation: catch_copy_anime 1s ease;
+}
+@keyframes catch_copy_anime{
+    0%{
+        opacity: 0;
+        top: 50px;
+    }
+    100%{
+        opacity: 1;
+        top: 0px;
+    }
 }
 #main_header #catch_copy:before,
 #main_header #catch_copy:after{
@@ -103,8 +114,11 @@ a{
     right: 0;
 }
 #main_header #eye_catch{
-    margin: 0px 0px 0px 0px;
+    margin: 0px;
     padding: 0px;
+}
+#main_header #eye_catch img{
+    animation: catch_copy_anime 3s ease;
 }
 
 #global_nav{
@@ -240,6 +254,8 @@ a{
 #main_content > article{
     margin: 60px 0px 0px 0px;
     padding: 0px;
+    opacity: 0;
+    transition: all 3s ease-in-out;
 }
 #main_content > article > h2{
     margin: 0px;
@@ -363,6 +379,7 @@ a{
         width: 100%;
     }*/
     #global_nav li label{
+        padding: 10px 0px;
         width: 100%;
     }
     #global_nav .nav_open{
